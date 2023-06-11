@@ -6,9 +6,7 @@
 .main{
     background-color: var(--bg-color);
     padding: 10px;
-    border-radius: 6px;
-   
-   
+    border-radius: 10px;
 }
 
 .first_row{
@@ -32,4 +30,14 @@
 
 }
 
+
+@media(max-width:478px)
+{
+    
+    .outer_div {
+       margin-left: 80px;
+        
+    }
+
+}
 

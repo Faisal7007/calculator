@@ -3,7 +3,7 @@ import './ToggleButton.css'
 
 function ToggleButton({handleToggle,text}) {
   return (
-    <div>
+    <div className='main_div'>
        <button onClick={handleToggle} className='toggle_btn'>{text}</button>
       
     </div>

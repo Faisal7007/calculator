@@ -1,10 +1,33 @@
 
+
+.main_div {
+    display: block;
+    justify-content: center;
+    align-items: start;
+    
+    
+}
+
 .toggle_btn{
-    margin-bottom: 76vh;
+    /* margin-bottom: 76vh; */
+    transform: translate(-50px ,-250px);
     padding: 10px;
     background-color: var(--btn-bg-color);
     color: var(--btn-text-color);
     border: none;
     border-radius: 2px;
     font-size: 15px;
+   
+   
+}
+
+
+@media(max-width:478px)
+{
+    
+    .toggle_btn {
+       margin-right: 30px;
+        
+    }
+
 }
