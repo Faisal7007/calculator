@@ -1,0 +1,35 @@
+.outer_div h1{
+    color: var(--text-color);
+    
+}
+
+.main{
+    background-color: var(--bg-color);
+    padding: 10px;
+    border-radius: 6px;
+   
+   
+}
+
+.first_row{
+    display: flex;
+    
+}
+.second_row{
+    display: flex;
+}
+
+.third_row{
+    display: flex;
+}
+
+.forth_row{
+    display: flex;
+
+}
+.fifth_row{
+    display: flex;
+
+}
+
+

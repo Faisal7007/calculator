@@ -1,0 +1,10 @@
+
+.toggle_btn{
+    margin-bottom: 76vh;
+    padding: 10px;
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text-color);
+    border: none;
+    border-radius: 2px;
+    font-size: 15px;
+}
