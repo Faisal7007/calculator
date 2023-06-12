@@ -7,15 +7,16 @@ import './Calculater.css'
 import ToggleButton from './ToggleButton'
 
 
+const getLocalItem = () => {
+  let list = JSON.parse(localStorage.getItem("mynumber"));
+  return list;
+};
 
 function Calculater({number,color,clickValue}) {
 
-  // const getLocalItem = ()=>{
-  // const number =  (localStorage.getItem('mynumber'))
-  // return number
-  // }
  
-  const [data, setData] = useState('')
+ 
+  const [data, setData] = useState( getLocalItem())
   const [toggle, setToggle] = useState(false)
   
   const inputButton = (e)=>{
@@ -46,12 +47,14 @@ function Calculater({number,color,clickValue}) {
     catch{
            setData('Error')
     }
+
+    
     
   }
   
-  // useEffect(()=>{
-  //     localStorage.setItem('mynumber',JSON.stringify(eval(data)))
-  // },[eval])
+  useEffect(() => {
+    localStorage.setItem("mynumber", JSON.stringify(data));
+  }, [data]);
 
   return ( 
     <div className="outer_div">
